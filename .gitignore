@@ -50,3 +50,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 .env
+node_modules/
