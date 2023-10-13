@@ -9,10 +9,8 @@ app.use(bodyParser.json());
 // Gọi sang router
 require("./src/routes/menu.router")(app);
 
-console.log(Intl.DateTimeFormat().resolvedOptions().timeZone)
-
-app.listen(3000, "localhost", () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log(
-    "Ung dung Node.js dang lang nghe tai dia chi: http://localhost:3000"
+   `Ung dung Node.js dang lang nghe tai dia chi: ${process.env.PORT || 'http://localhost:3000'}`
   );
 });
