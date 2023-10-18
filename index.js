@@ -9,6 +9,6 @@ app.use(bodyParser.json());
 // Gọi sang router
 require("./src/routes/menu.router")(app);
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(8080, 'localhost', () => {
   console.log("server start");
 });
