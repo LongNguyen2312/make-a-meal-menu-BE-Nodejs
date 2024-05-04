@@ -9,6 +9,9 @@ app.use(bodyParser.json());
 // Gọi sang router
 require("./src/routes/menu.router")(app);
 
+// ngrok start command
+// ngrok http localhost:8080
+
 app.listen(8080, 'localhost', () => {
   console.log("server start");
 });
